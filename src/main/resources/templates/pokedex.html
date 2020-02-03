@@ -11,6 +11,9 @@
             <div class="card shadow-sm mb-3">
                 <div class="card-header">
                     <h4 class="my-0 font-weight-normal">{{name}} <!--2--><span class="badge badge-secondary">Id {{id}} <!--3--></span></h4>
+                    {{#types}}
+                    <h5 class="my-0 font-weight-normal">{{.}} </h5>
+                    {{/types}}
                 </div>
                 <img class="card-img-top" src="{{sprites.front_default}}" alt="Pokemon"/>
                 <img class="card-img-top" src="{{sprites.back_default}}" alt="Pokemon"/>
